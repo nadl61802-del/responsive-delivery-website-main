@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!--=============== FAVICON ===============-->
-   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/img/favicon.webp" type="image/x-icon">
 
    <!--=============== REMIXICONS ===============-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
@@ -24,26 +24,26 @@
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
-         <a href="#" class="nav_logo">
+         <a href="#" class="nav_logo" title="checkout" aria-label="checkout">
             <i class="ri-bowl-fill"></i> <span>Foot Lover</span>
          </a>
 
-         <div class="nav_menu" id="nav_menu">
+         <div class="nav_menu" id="nav-menu">
             <ul class="nav_list">
                <li>
-                  <a href="#home" class="nav_link">Home</a>
+                  <a href="#home" title="Home" aria-label="Home" class="nav_link">Home</a>
                </li>
                <li>
-                  <a href="#menu" class="nav_link">Menu</a>
+                  <a href="#menu" title="Menu" aria-label="Menu" class="nav_link">Menu</a>
                </li>
                <li>
-                  <a href="#reviews" class="nav_link">Reviews</a>
+                  <a href="#reviews" title="Reviews" aria-label="Reviews" class="nav_link">Reviews</a>
                </li>
                <li>
-                  <a href="#app" class="nav_link">Our App</a>
+                  <a href="#app" title="Our App" aria-label="Our App" class="nav_link">Our App</a>
                </li>
                <li>
-                  <a href="#find " class="nav_link">Find Us</a>
+                  <a href="#map" title="Find Us" aria-label="Find Us" class="nav_link">Find Us</a>
                </li>
             </ul>
             <!-- theme button -->
@@ -51,7 +51,7 @@
          </div>
 
          <!-- Toggle button -->
-         <div class="nav_toggle" id="nav_toggle">
+         <div class="nav_toggle" id="nav-toggle">
             <i class="ri-menu-5-line"></i>
          </div>
       </nav>
@@ -62,12 +62,98 @@
    <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
+         <div class="home_container container grid">
+            <div class="home_data">
+               <div>
 
+                  <h1 class="home_title">
+                     Enjoy Your Delicious <span>Food</span>
+                  </h1>
+
+                  <p class="home_description">
+                     We'll delight your stomach with a variety of delicious
+                     home-delivered food, delivered quickly and without delay.
+                  </p>
+
+                  <a href="#menu" class="button">Order Now</a>
+               </div>
+
+               <div class="home_social">
+
+                  <a href="https://m.me/bedimcode" title="messenger" aria-label="messenger" target="_blank"
+                     class="home_link">
+                     <i class="ri-messenger-fill"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/bedimcode/" title="instagram" aria-label="instagram"
+                     target="_blank" class="home_link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
+
+                  <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
+                     title="whatsapp" aria-label="whatsapp" target="_blank" class="home_link">
+                     <i class="ri-whatsapp-fill"></i>
+                  </a>
+
+                  <a href="https://web.telegram.org/" title="telegram" aria-label="telegram" target="_blank"
+                     class="home_link">
+                     <i class="ri-telegram-2-fill"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="home_image">
+               <img src="assets/img/home-img.webp " class="home_img  img-fluid" loading="lazy" width="100" height="100"
+                  alt="iamge-home">
+               <div class="home_phone">
+                  <div class="home_icon">
+                     <i class="ri-phone-fill"></i>
+                  </div>
+
+                  <address class="home_number">
+                     phone Number:
+                     <span>+20 101-750-6736</span>
+                  </address>
+               </div>
+
+               <p class="home_comment">
+                  Fast delivery and friendly staff. The food was good
+                  and very tasty 10/10.
+               </p>
+            </div>
+         </div>
       </section>
 
       <!--==================== SERVICE ====================-->
       <section class="service section">
+         <h4 class="section__subtitle">OUR SERVICE</h4>
+         <h2 class="section__title">How Does It Work?</h2>
 
+         <div class="service_container container grid">
+
+            <div class="service_card">
+
+               <img src="assets/img/service-img-1.webp" class="service_img img-fluid" alt="iamge" loading="lazy"
+                  width="100" height="100">
+               <h3 class="service_title">Easy To Order</h3>
+               <p class="service_description">You only need a few steps in ordering food.</p>
+            </div>
+
+            <div class="service_card">
+
+               <img src="assets/img/service-img-2.webp" class="service_img img-fluid" alt="iamge" loading="lazy"
+                  width="100" height="100">
+               <h3 class="service_title">Fastest Delivery </h3>
+               <p class="service_description">Always delivered on time and even faster.</p>
+            </div>
+
+            <div class="service_card">
+
+               <img src="assets/img/service-img-3.webp" class="service_img img-fluid" alt="iamge" loading="lazy"
+                  width="100" height="100">
+               <h3 class="service_title">Best Quality</h3>
+               <p class="service_description">Not only fast for us quality is also number one.</p>
+            </div>
+         </div>
       </section>
 
       <!--==================== MENU ====================-->
