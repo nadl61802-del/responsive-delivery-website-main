@@ -314,6 +314,7 @@ header {
   text-align: center;
   display: grid;
   row-gap: 3rem;
+  
 }
 
 .home_title {
@@ -1103,7 +1104,9 @@ header {
   .footer_content {
     gap: 2rem;
   }
+
 }
+
 
 @media screen and (min-width:540px) {
   .nav_menu {
@@ -1133,6 +1136,7 @@ header {
   .footer_form {
     width: 360px;
   }
+
 }
 
 @media screen and (min-width:768px) {
@@ -1161,6 +1165,12 @@ header {
 /* For medium devices */
 
 /* For large devices */
+@media screen and (max-width:1150px){
+    .home_data{
+    order: 2;
+    margin-top: 3rem;
+  }
+}
 @media screen and (min-width:1150px) {
   .container {
     margin-inline: auto;
