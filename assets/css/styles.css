@@ -826,6 +826,7 @@ header {
 }
 
 .app_img {
+  width: 100%;
   border-radius: 1.5rem;
   filter: var(--shadow-img-small);
 }
