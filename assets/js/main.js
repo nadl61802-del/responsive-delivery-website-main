@@ -91,30 +91,33 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-})
-sr.reveal(`.home_title, .home_description, .home_data, .button`, { interval: 100 })
-sr.reveal(`.home_img`, { delay: 900 })
-sr.reveal(`.home_phone`, { origin: 'left', delay: 1500 })
-sr.reveal(`.home_comment`, { origin: 'right', delay: 1800 })
-sr.reveal(`.home_social`, { origin: 'bottom', delay: 2100 })
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
+if (!prefersReducedMotion) {
+    const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '28px',
+        duration: 1100,
+        delay: 120,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        opacity: 0,
+        scale: 0.98,
+        cleanup: true,
+        reset: false,
+    })
 
-sr.reveal(`.service_card, .service_title, .service_description`, { interval: 100 })
+    sr.reveal(`.section__subtitle, .section__title`, { origin: 'top', distance: '20px', interval: 80 })
+    sr.reveal(`.service_card`, { interval: 120 })
+    sr.reveal(`.menu_card`, { interval: 100 })
 
-sr.reveal(`.menu_card`, { interval: 100 })
+    sr.reveal(`.reviews_content`, { origin: 'right', delay: 100 })
+    sr.reveal(`.reviews_image`, { origin: 'left', delay: 220 })
 
-sr.reveal(`.reviews_content`, { origin: 'right' })
-sr.reveal(`.reviews_image`, { origin: 'left', delay: 600 })
+    sr.reveal(`.app_description, .app .button`, { interval: 100 })
+    sr.reveal(`.app_image`, { origin: 'bottom', delay: 260 })
 
+    sr.reveal(`.map_area`, { origin: 'right', delay: 80 })
+    sr.reveal(`.map_card`, { origin: 'left', delay: 180 })
 
-sr.reveal(`.app .section_subtitle,.app .section_title, .app_description, .app .button `, { interval: 100 })
-sr.reveal(`.app_image`, { origin: 'bottom', delay: 900 })
-
-sr.reveal(`.map_area`, { origin: 'right'})
-sr.reveal(`.map_card`, { origin: 'left', delay: 600 })
-
-sr.reveal(`.footer_data, footer_content, div`, { interval: 100 })
+    sr.reveal(`.footer_data, .footer_content`, { interval: 80 })
+}
